@@ -11,6 +11,9 @@ bool  isbigger(int a, int b,BIGGER big) {
 }
 
 int main() {
+
+	using std::placeholders::_1;
+
 	int a = 4, b = 3;
 
 	auto f = [&] ()mutable->bool {return a > b; };
